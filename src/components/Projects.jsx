@@ -17,8 +17,8 @@ const Projects = () => {
         { icon: SiNodedotjs, name: "Node.js" },
         { icon: SiMongodb, name: "MongoDB" }
       ],
-      github: "https://github.com/yourusername/greenfuel-market",
-      live: "https://greenfuel-market.com",
+      github: "https://github.com/virpariyamalay/GreenFuelMarket",
+      live: "https://greenfuelmarket.vercel.app",
       date: "01 2025"
     },
     {

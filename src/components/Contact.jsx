@@ -1,3 +1,5 @@
+
+
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { ToastContainer, toast } from 'react-toastify';
@@ -15,12 +17,13 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
 
+    // Ensure backend URL is set
+    const backendURL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:3000';
+
     try {
-      const response = await fetch('http://localhost:3000/api/contact', {
+      const response = await fetch(`${backendURL}/api/contact`, {
         method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
+        headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
       });
 

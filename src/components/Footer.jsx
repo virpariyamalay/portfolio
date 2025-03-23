@@ -10,7 +10,7 @@ const Footer = () => {
         viewport={{ once: true }}
       >
         <p>Designed & Built by Malay Virpariya</p>
-        <p className="text-sm mt-2">© 2024 All rights reserved</p>
+        <p className="text-sm mt-2">© 2025 All rights reserved</p>
       </motion.div>
     </footer>
   )
